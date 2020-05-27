@@ -6,16 +6,14 @@
 call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'sff1019/vim-joker'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
 Plug 'powerline/powerline-fonts'
 Plug 'vim-syntastic/syntastic'
+Plug 'jiangmiao/auto-pairs'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -23,15 +21,15 @@ call plug#end()
 " ==== General Settings ====
 " ==========================
 "
-colorscheme joker
+
+set background=dark
+colorscheme gruvbox
 
 set autoindent
 set smarttab
 set relativenumber
-
 set hidden
 set updatetime=300
-
 set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=2 smarttab
@@ -72,15 +70,10 @@ command Config call Config()
 "
 " air-line
 let g:airline_powerline_fonts = 1
-" air-line
-let g:airline_powerline_fonts = 1
-
-
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
-
 
 " unicode symbols
 let g:airline_left_sep = '»'
