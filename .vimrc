@@ -8,8 +8,10 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+
 Plug 'vim-syntastic/syntastic'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -18,6 +20,8 @@ Plug 'mxw/vim-jsx'
 Plug 'stoeffel/material-iterm'
 Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-surround'
+Plug 'nlknguyen/papercolor-theme'
 
 call plug#end()
 
@@ -26,8 +30,8 @@ call plug#end()
 " ==========================
 
 set termguicolors
-set background=dark
-colorscheme ayu
+set background=light
+colorscheme PaperColor
 
 set guifont=Hack:h11
 set autoindent
@@ -46,6 +50,7 @@ set incsearch
 set nu
 
 let g:airline#extensions#tabline#enabled = 1
+let g:coc_disable_startup_warning = 1
 
 "---------------------------
 " ----- TAB COMPLETION -----
@@ -66,7 +71,7 @@ endfunction
 "---------------------------
 
 function! Config()
-  edit ~/_vimrc
+  edit ~/.vimrc
 endfunction
 
 function! Save()
