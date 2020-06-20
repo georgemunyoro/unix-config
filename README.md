@@ -9,8 +9,8 @@ Autocompletion is powered by [coc](https://github.com/neoclide/coc.nvim) with co
 # Theme
 I run various themes depending on my mood, heres a complete list of these themes:
 
-[material-iterm](https://github.com/stoeffel/material-iterm)
-[PaperColor](https://github.com/NLKNguyen/papercolor-theme)
-[ayu](https://github.com/ayu-theme/ayu-vim)
-[vscode](https://github.com/dunstontc/vim-vscode-theme)
-[joker](https://github.com/sff1019/vim-joker)
+- [material-iterm](https://github.com/stoeffel/material-iterm)
+- [PaperColor](https://github.com/NLKNguyen/papercolor-theme)
+- [ayu](https://github.com/ayu-theme/ayu-vim)
+- [vscode](https://github.com/dunstontc/vim-vscode-theme)
+- [joker](https://github.com/sff1019/vim-joker)
