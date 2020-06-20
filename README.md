@@ -1,4 +1,4 @@
 # vimrc
 My Vim Config
 
-![image text] (https://i.ibb.co/YQ1NsRX/vim.png)
+![screenshot of my vim editor](https://i.ibb.co/YQ1NsRX/vim.png)
