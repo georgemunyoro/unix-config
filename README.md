@@ -1,5 +1,5 @@
 # vimrc
-My Vim Config
+My Vim Config running CoC-tsserver with the ayu theme :
 
 ![screenshot of my vim editor](https://i.ibb.co/YQ1NsRX/vim.png)
 
