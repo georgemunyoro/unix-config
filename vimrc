@@ -6,7 +6,6 @@
 call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sff1019/vim-joker'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
@@ -19,26 +18,16 @@ Plug 'mxw/vim-jsx'
 Plug 'stoeffel/material-iterm'
 Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
-Plug 'NLKNguyen/papercolor-theme'
 
 call plug#end()
-
-" JSX Emmet TAB-, binding
-
-" let g:user_emmet_leader_key='<Tab>'
-" let g:user_emmet_settings = {
-"   \  'javascript.jsx' : {
-"     \      'extends' : 'jsx',
-"   \,
-"   \ }}
 
 " ==========================
 " ==== General Settings ====
 " ==========================
 
 set termguicolors
-set background=light
-colorscheme PaperColor
+set background=dark
+colorscheme ayu
 
 set guifont=Hack:h11
 set autoindent
@@ -57,10 +46,6 @@ set incsearch
 set nu
 
 let g:airline#extensions#tabline#enabled = 1
-
-" ==========================
-" ==== General Settings ====
-" ==========================
 
 "---------------------------
 " ----- TAB COMPLETION -----
@@ -98,26 +83,6 @@ command W call Save()
 command Q call Exit()
 
 " ==========================
-" ==== General Settings ====
-" ==========================
-
-" air-line
-" let g:airline_powerline_fonts = 1
- 
-" if !exists('g:airline_symbols')
-"   let g:airline_symbols = {}
-" endif
-
-" Syntastic Settings
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 if !exists('g:AutoPairsShortcutJump')
   let g:AutoPairsShortcutJump = '<C-l>'
