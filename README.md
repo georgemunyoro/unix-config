@@ -20,3 +20,4 @@ I run various themes depending on my mood, heres a complete list of these themes
 - [ayu](https://github.com/ayu-theme/ayu-vim)
 - [vscode](https://github.com/dunstontc/vim-vscode-theme)
 - [joker](https://github.com/sff1019/vim-joker)
+- [gruvbox](https://github.com/morhetz/gruvbox)
