@@ -1,4 +1,9 @@
-# vimrc
+# ~/.bashrc
+Includes fzf configuration and some key bindings :
+
+- Ctrl + V : Opens vim
+
+# ~/.vimrc
 My Vim Config running CoC-tsserver with the ayu theme :
 
 ![screenshot of my vim editor](https://i.ibb.co/YQ1NsRX/vim.png)
