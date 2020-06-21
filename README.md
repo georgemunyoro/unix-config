@@ -1,5 +1,5 @@
 # ~/.bashrc
-Includes fzf configuration and some key bindings :
+Includes fzf configuration and a single key bindings :
 
 - Ctrl + V : Opens vim
 
