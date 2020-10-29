@@ -1,39 +1,19 @@
 
-" ==========================
-" ========= Plugins ========
-" ==========================
-
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-
-Plug 'vim-syntastic/syntastic'
+Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
+Plug 'arzg/vim-colors-xcode'
 Plug 'mattn/emmet-vim'
-Plug 'mxw/vim-jsx'
-Plug 'stoeffel/material-iterm'
-Plug 'ayu-theme/ayu-vim'
-Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-surround'
-Plug 'nlknguyen/papercolor-theme'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
-" ==========================
-" ==== General Settings ====
-" ==========================
-
-set termguicolors
-set background=light
-colorscheme PaperColor
-
-set guifont=Hack:h11
+set encoding=UTF-8
 set autoindent
 set relativenumber
 set noshowcmd
@@ -49,17 +29,14 @@ set noswapfile
 set incsearch
 set nu
 
-let g:airline#extensions#tabline#enabled = 1
-let g:coc_disable_startup_warning = 1
-
-"---------------------------
+" --------------------------
 " ----- TAB COMPLETION -----
-"---------------------------
+" --------------------------
 
 inoremap <silent><expr> <TAB>
-	  \ pumvisible() ? "\<C-n>" :
-	  \ <SID>check_back_space() ? "\<TAB>" :
-	  \ coc#refresh()
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
@@ -67,8 +44,12 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-"---------------------------
-"---------------------------
+let g:coc_disable_startup_warning = 1
+
+" Colorscheme
+colorscheme xcodedark
+
+" Convenient custom functions
 
 function! Config()
   edit ~/.vimrc
@@ -87,8 +68,3 @@ command Config call Config()
 command W call Save()
 command Q call Exit()
 
-" ==========================
-
-if !exists('g:AutoPairsShortcutJump')
-  let g:AutoPairsShortcutJump = '<C-l>'
-endif
